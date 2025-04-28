@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "NEON Ecological Forecast Challenge"
+  page-navigation: true
+  repo-url: https://github.com/eco4cast/neon4cast-ci
+  repo-actions: [source, issue]
+
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: targets.qmd
+        icon: bullseye
+      - href: instructions.qmd
+        icon: info-square
+      - href: performance.qmd
+        icon: droplet
+      - href: catalog.qmd
+        icon: book
+      - href: learn-more.qmd
+        icon: check2-circle
+      - href: use-in-course.qmd
+        icon: people
+  page-footer:
+    left: "CC-BY"
+    right:
+      - icon: github
+        href: https://github.com/eco4cast/neon4cast-ci
+
+format:
+  html:
+    theme: [sandstone, custom.scss]
+    css: styles.css
+    title-block-style: default
+    title-block-banner: "img/banner.jpg"
+    title-block-banner-color: white
+    page-layout: full
+    toc: true
+
+editor: visual
+
